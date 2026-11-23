@@ -730,69 +730,6 @@ img{ display:block; max-width:100%; }
   .hero__media img{ transform:none !important; }
   .hero__scroll span{ display:none; }
 }
-/* Stack the Dress Code section vertically: Title -> Text -> Color Swatches */
-#dress-code .container,
-.dress-code .container,
-section[id*="dress"] > div,
-section[class*="dress"] > div {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-}
-
-/* Put the description text FIRST (order: 1) */
-#dress-code p,
-.dress-code p,
-section[id*="dress"] p,
-section[class*="dress"] p {
-  order: 1 !important;
-  max-width: 560px !important;
-  margin: 0 auto 36px auto !important;
-  position: static !important;
-}
-
-/* Put the color palette row SECOND (order: 2) and center the 4 items */
-#dress-code .swatches,
-.dress-code .swatches,
-section[id*="dress"] [class*="grid"],
-section[class*="dress"] [class*="grid"],
-section[id*="dress"] [class*="palette"],
-section[class*="dress"] [class*="palette"] {
-  order: 2 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  gap: 28px !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  position: static !important;
-}
-
-/* Make ONLY the color boxes small and round */
-#dress-code .swatch,
-.dress-code .swatch,
-section[id*="dress"] [class*="swatch"],
-section[class*="dress"] [class*="swatch"] {
-  width: 60px !important;
-  height: 60px !important;
-  min-height: 60px !important;
-  aspect-ratio: 1 / 1 !important;
-  border-radius: 50% !important;
-  margin: 0 auto 10px auto !important;
-}
-
-@media (min-width: 768px) {
-  #dress-code .swatch,
-  .dress-code .swatch,
-  section[id*="dress"] [class*="swatch"],
-  section[class*="dress"] [class*="swatch"] {
-    width: 72px !important;
-    height: 72px !important;
-    min-height: 72px !important;
-  }
-}
 </style>
 </head>
 
