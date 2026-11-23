@@ -730,12 +730,23 @@ img{ display:block; max-width:100%; }
   .hero__media img{ transform:none !important; }
   .hero__scroll span{ display:none; }
 }
-/* Make dress code color swatches small and round on mobile & desktop */
+/* Fix alignment and keep dress code swatches small and round */
+#dress-code .swatches,
+.dress-code .swatches,
+[class*="dress"] [class*="grid"],
+[class*="dress"] [class*="palette"] {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  max-width: 100% !important;
+  margin: 0 auto 32px auto !important;
+}
+
+/* Target ONLY the actual color circles */
+#dress-code .swatch,
 .dress-code .swatch,
-.dress-code .color-box,
-.dress-code .color-card > div:first-child,
-[class*="dress"] [class*="swatch"],
-[class*="dress"] [class*="color"] > div:first-child {
+[class*="dress"] [class*="swatch"] {
   width: 64px !important;
   height: 64px !important;
   min-height: 64px !important;
@@ -744,10 +755,9 @@ img{ display:block; max-width:100%; }
   margin: 0 auto 10px auto !important;
 }
 
-/* Keep swatches compact and neatly grouped on desktop */
 @media (min-width: 768px) {
+  #dress-code .swatch,
   .dress-code .swatch,
-  .dress-code .color-box,
   [class*="dress"] [class*="swatch"] {
     width: 72px !important;
     height: 72px !important;
