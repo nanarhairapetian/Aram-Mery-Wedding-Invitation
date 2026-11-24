@@ -759,6 +759,30 @@ section[class*="dress"] > div {
   .hero__media img{ transform:none !important; }
   .hero__scroll span{ display:none; }
 }
+/* Remove dashed borders, make backgrounds transparent, and apply Garamond
+   to both the Invitation message and the Our Story paragraphs */
+.invitation__note.paste-slot--block,
+#invitation .paste-slot--block,
+section[id*="invitation"] .paste-slot--block,
+#story p,
+#our-story p,
+.story p,
+.our-story p,
+section[id*="story"] .paste-slot,
+section[class*="story"] .paste-slot,
+section[id*="story"] p,
+section[class*="story"] p {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  font-family: 'EB Garamond', Garamond, Georgia, serif !important;
+  font-size: clamp(1.1rem, 2vw, 1.35rem) !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
 </style>
 </head>
 
